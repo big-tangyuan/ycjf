@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChaYiShen">
+    <TextView
+        android:id="@+id/cysTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:text="查医生"
+        android:gravity="center"
+        android:background="#4BC99A"
+        android:textColor="#ffffff"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/cysTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="综合排序"
+            android:textSize="25dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="医生职称"
+            android:textSize="25dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

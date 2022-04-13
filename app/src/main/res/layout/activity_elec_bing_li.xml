@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    tools:context=".activity.ElecBingLi">
+    <TextView
+        android:id="@+id/elcTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电子病历"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+    <LinearLayout
+        android:id="@+id/blData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/elcTitle"
+        android:background="@drawable/bingli"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/elc"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="暂无病历数据，请前往问诊页咨询"
+            android:textSize="17dp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/daoChuBtm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/binglibtm"
+        android:layout_below="@+id/blData"
+        android:text="导出病历"
+        android:textSize="18dp"
+        android:textColor="#505050"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/daoChuBtm"
+        android:layout_margin="50dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="#888888"
+        android:text="提示：\n·医触即发并不会泄露您的个人信息，只有您的授权医生经由您的准许后可以查看您的电子病历，电子病历可以选择生成PDF或WORD形式便于您打印纸质版病历。\n·本款软件通过您的日常问诊记录采用数据分析等方式自动生成您的专属电子病历，便于您的日常就医与健康监测。\n·通过您的就诊数据以及在本软件的历史咨询数据分析生成病历可以更加准确地记录您的历史健康情况，便于医生快速了解您的病史。"
+        />
+
+
+
+
+</RelativeLayout>

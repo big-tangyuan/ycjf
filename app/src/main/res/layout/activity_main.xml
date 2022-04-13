@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:orientation="horizontal">
+    <!--
+        <LinearLayout
+            android:id="@+id/left_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#d5f4e5"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/doclog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医\n生\n登\n录"
+                android:textSize="40dp"
+                android:background="@drawable/btm11"/>
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/right_main"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#d6eaf3"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/btn_signup_or_login_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="病\n患\n登\n录"
+            android:textSize="40dp"
+            android:background="@drawable/btm22"/>
+    </LinearLayout>
+
+</LinearLayout>
